@@ -7,6 +7,10 @@ def derp():
 		string = request.form["string"]
 	else:
 		string = ""
+	if len(string) % 5 != 0:
+		remainder = len(string) % 5
+		for i in range(remainder):
+			string= string+"0"
 	divs = []
 	for i in range(len(string.encode("hex"))/5):
 		divs.append(string.encode("hex")[(i*5):(i*5)+5]+"0")

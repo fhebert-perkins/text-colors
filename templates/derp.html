@@ -1,6 +1,8 @@
 <form method="post">
-	<center><input type="text" name="string" style="width:50%"/></center>
+	<center><input type="text" name="string" style="width:50%" placeholder="Some text..."/></center>
 </form>
+<center>
 {% for div in divs %}
 	<div style="width:20px;height:20px;background-color:#{{ div }};display:inline-block;" title="#{{ div }}"></div>
 {% endfor %}
+</center>
