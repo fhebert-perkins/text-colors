@@ -1,0 +1,6 @@
+<form method="post">
+	<center><input type="text" name="string" style="width:50%"/></center>
+</form>
+{% for div in divs %}
+	<div style="width:10px;height:10px;background-color:#{{ div }};display:inline-block;"></div>
+{% endfor %}
